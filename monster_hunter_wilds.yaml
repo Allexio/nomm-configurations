@@ -1,22 +1,33 @@
-name: 'Monster Hunter Wilds'
-steam_id: 2246340
-mods_path: ""
-accent_colour: "#910324"
-nexus_id: "monsterhunterwilds"
-
-essential_utilities:
-  reframeworkVR:
-    name: "REFramework (VR Support)"
-    creator: praydog
-    creator_link: https://github.com/praydog
-    source: "https://github.com/praydog/REFramework/releases/download/v1.5.9.1/MHWILDS.zip"
-    utility_path: ""
-  
-  reframework:
-    name: "REFramework (No VR Support)"
-    creator: praydog
-    creator_link: https://github.com/praydog
-    source: "https://github.com/praydog/REFramework/releases/download/v1.5.9.1/MHWILDS.zip"
-    utility_path: ""
-    whitelist: 
-      - dinput8.dll
+name: Monster Hunter Wilds
+steam_id: '2246340'
+steam_folder_name: ''
+gog_id: ''
+nexus_id: monsterhunterwilds
+accent_colour: '#910323'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/'
+utilities:
+- name: REFramework (VR Support)
+  version: 1.5.9.1
+  creator: praydog
+  creator_link: https://github.com/praydog
+  source_type: direct
+  source_url: https://github.com/praydog/REFramework/releases/download/v1.5.9.1/MHWILDS.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='dinput8=n,b' %command%
+- name: REFramework (No VR Support)
+  version: 1.5.9.1
+  creator: praydog
+  creator_link: https://github.com/praydog
+  source_type: direct
+  source_url: https://github.com/praydog/REFramework/releases/download/v1.5.9.1/MHWILDS.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='dinput8=n,b' %command%
+  whitelist: dinput8.dll

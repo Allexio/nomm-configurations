@@ -1,19 +1,23 @@
-name: "Baldur's Gate 3"
-steam_id: 1086940
-mods_path:
-- path: "{game_path}/"
-  name: Native
-  description: "Used for native mods that require the Native mod loader, such as the 'Native Camera Tweaks' mod."
-
-nexus_id: "baldursgate3"
-
-essential_utilities:
-  norbyte-script-extender:
-    name: "Norbyte's Baldur's Gate 3 Script Extender"
-    version: 1.5
-    creator: Norbyte
-    creator_link: https://github.com/Norbyte
-    source: "https://github.com/Norbyte/bg3se/releases/download/updater-20240430/BG3SE-Updater-20240430.zip"
-    utility_path: "bin/"
-    enable_command: ""
-  
+name: Baldur's Gate 3
+steam_id: '1086940'
+steam_folder_name: ''
+gog_id: ''
+nexus_id: baldursgate3
+accent_colour: '#3583e4'
+wiki_link: ''
+mod_paths:
+- name: Native
+  description: Used for native mods that require the Native mod loader, such as the
+    'Native Camera Tweaks' mod
+  path: '{game_path}/'
+utilities:
+- name: Norbyte's Baldur's Gate 3 Script Extender
+  version: Latest
+  creator: Norbyte
+  creator_link: https://github.com/Norbyte
+  source_type: github
+  source_url: https://github.com/Norbyte/bg3se
+  github_asset_regex: BG3SE
+  deploy_to_game_files: true
+  deployment_path: bin
+  executable_type: non-exec

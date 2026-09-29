@@ -1,11 +1,12 @@
-accent_colour: '#3abfaf'
-essential_utilities: {}
-gog_id: '1446213994'
-mods_path:
-- description: The default path where mods will be extracted to
-  name: Default path
-  path: '{game_path}/GAMEDATA/MODS'
 name: No Man's Sky
-nexus_id: nomanssky
-steam_folder_name: No Man's Sky
 steam_id: '275850'
+steam_folder_name: No Man's Sky
+gog_id: '1446213994'
+nexus_id: nomanssky
+accent_colour: '#3abfaf'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/GAMEDATA/MODS'
+utilities: []

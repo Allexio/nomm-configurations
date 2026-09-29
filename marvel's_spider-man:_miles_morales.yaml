@@ -1,0 +1,27 @@
+name: 'Marvel''s Spider-Man: Miles Morales'
+steam_id: '1817190'
+steam_folder_name: Marvel's Spider-Man Miles Morales
+gog_id: ''
+nexus_id: spidermanmilesmorales
+accent_colour: '#7a212b'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{utility_path}/Overstrike/Mods Library'
+utilities:
+- name: Overstrike
+  version: Latest
+  creator: Tkachov
+  creator_link: https://github.com/Tkachov
+  source_type: github
+  source_url: https://github.com/Tkachov/Overstrike
+  github_asset_regex: Overstrike
+  deploy_to_game_files: false
+  executable_type: windows
+  executable_path: Overstrike
+  wine_verbs:
+  - dotnetdesktop7
+  launch_options: -scripts
+  final_instructions: You may need to enable script support in the config of Overstrike
+    for modding to work.

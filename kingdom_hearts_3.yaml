@@ -1,7 +1,12 @@
-name: "KINGDOM HEARTS III"
+name: KINGDOM HEARTS III
+steam_id: '2552450'
 steam_folder_name: KINGDOM HEARTS III
-steam_id: 2552450
+gog_id: ''
 nexus_id: kingdomhearts3
-accent_colour: "#014dad"
-
-mods_path: KINGDOM HEARTS III/Content/Paks/~mods/
+accent_colour: '#004dad'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/KINGDOM HEARTS III/Content/Paks/~mods'
+utilities: []

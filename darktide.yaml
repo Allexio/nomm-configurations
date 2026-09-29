@@ -1,18 +1,23 @@
 name: 'Warhammer 40,000: Darktide'
-steam_id: 1361210
-mods_path: mods/
-wiki_link: "darktide"
-
+steam_id: '1361210'
+steam_folder_name: ''
+gog_id: ''
+nexus_id: warhammer40kdarktide
+accent_colour: '#3583e4'
+wiki_link: darktide
 load_order_path: mods/mod_load_order.txt
-
-nexus_id: "warhammer40kdarktide"
-
-essential_utilities:
-  darktide-mod-loader:
-    name: Darktide Mod Loader
-    version: 1.5
-    creator: Talon-d
-    creator_link: https://github.com/talon-d
-    source: "https://github.com/talon-d/darktideML-4linux/releases/download/1.5/darktideML-4linux1-5.zip"
-    utility_path: ""
-    enable_command: "chmod +x tools/dtkit-patch; sh handle_darktide_mods.sh --enable"
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/mods'
+utilities:
+- name: Darktide Mod Loader
+  version: '1.5'
+  creator: Talon-d
+  creator_link: https://github.com/talon-d
+  source_type: direct
+  source_url: https://github.com/talon-d/darktideML-4linux/releases/download/1.5/darktideML-4linux1-5.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  enable_command: chmod +x tools/dtkit-patch; sh handle_darktide_mods.sh --enable

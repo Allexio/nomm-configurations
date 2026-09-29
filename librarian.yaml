@@ -1,22 +1,25 @@
-name: "Librarian: Tidy Up the Arcane Library!"
-steam_id: 4197610
+name: 'Librarian: Tidy Up the Arcane Library!'
+steam_id: '4197610'
+steam_folder_name: ''
+gog_id: ''
 nexus_id: librariantidyupthearcanelibrary
-accent_colour: "#7e261a"
-
-mods_path:
-- path: "Librarian/Content/Paks/~mods/"
-  name: Paks mods
-  description: "Used for Paks mods."
-- path: "Librarian/Binaries/Win64/ue4ss/Mods/"
-  name: UE4SS mods
-  description: "Used for UE4SS mods"
-
-essential_utilities:
-  UE4SS:
-    name: RE-UE4SS
-    version: experimental-latest
-    creator: UE4SS-RE
-    creator_link: https://github.com/UE4SS-RE
-    source: "https://github.com/Okaetsu/RE-UE4SS/releases/download/experimental-palworld/UE4SS-Palworld.zip"
-    utility_path: "Librarian/Binaries/Win64/"
-    steam_launch_options: WINEDLLOVERRIDES='UE4SS=n,b;dwmapi=n,b' %command%
+accent_colour: '#7e2418'
+wiki_link: ''
+mod_paths:
+- name: Paks mods
+  description: Used for Paks mods
+  path: '{game_path}/Librarian/Content/Paks/~mods'
+- name: UE4SS mods
+  description: Used for UE4SS mods
+  path: '{game_path}/Librarian/Binaries/Win64/ue4ss/Mods'
+utilities:
+- name: RE-UE4SS
+  version: experimental-latest
+  creator: RE-UE4SS
+  creator_link: https://github.com/UE4SS-RE
+  source_type: direct
+  source_url: https://github.com/Okaetsu/RE-UE4SS/releases/download/experimental-palworld/UE4SS-Palworld.zip
+  deploy_to_game_files: true
+  deployment_path: Librarian/Binaries/Win64
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='UE4SS=n,b;dwmapi=n,b' %command%

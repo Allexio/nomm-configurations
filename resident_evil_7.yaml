@@ -1,30 +1,34 @@
-name: "Resident Evil 7 Biohazard"
-steam_folder_name: RESIDENT EVIL 7 biohazard
-steam_id: 418370
+name: Resident Evil 7 Biohazard
+steam_id: '418370'
+steam_folder_name: 'RESIDENT EVIL 7 biohazard'
+gog_id: ''
 nexus_id: residentevil7
-accent_colour: "#eb7701"
-
-mods_path: ""
-
-essential_utilities:
-  REFramework DX11:
-    name: REFramework DX11 Version
-    version: 1.5.9.1
-    creator: praydog
-    creator_link: https://github.com/praydog
-    source: https://github.com/praydog/REFramework/releases/download/v1.5.9.1/RE7_TDB49.zip
-    utility_path: ""
-    enable_command: ""
-    whitelist:
-      - dinput8.dll
-
-  REFramework RT:
-    name: REFramework RT Version (DX12)
-    version: REF Nightly 01373
-    creator: praydog
-    creator_link: https://github.com/praydog
-    source: https://github.com/praydog/REFramework-nightly/releases/download/nightly-01373-c4b1314820d20255febf7834903e8cedb669b49c/REFramework.zip
-    utility_path: ""
-    enable_command: ""
-    whitelist:
-      - dinput8.dll
+accent_colour: '#eb7701'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/'
+utilities:
+- name: REFramework DX11 Version
+  version: 1.5.9.1
+  creator: praydog
+  creator_link: https://github.com/praydog
+  source_type: direct
+  source_url: https://github.com/praydog/REFramework/releases/download/v1.5.9.1/RE2_TDB66.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='dinput8=n,b' %command%
+  whitelist: dinput8.dll
+- name: REFramework RT Version (DX12)
+  version: REF Nightly 01373
+  creator: praydog
+  creator_link: https://github.com/praydog
+  source_type: direct
+  source_url: https://github.com/praydog/REFramework-nightly/releases/download/nightly-01373-c4b1314820d20255febf7834903e8cedb669b49c/REFramework.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='dinput8=n,b' %command%
+  whitelist: dinput8.dll
