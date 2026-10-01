@@ -1,7 +1,12 @@
-name: "SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated"
+name: 'SpongeBob SquarePants: Battle for Bikini Bottom - Rehydrated'
+steam_id: '969990'
 steam_folder_name: SpongeBob SquarePants Battle for Bikini Bottom - Rehydrated
-steam_id: 969990
+gog_id: ''
 nexus_id: spongebobsquarepantsbattleforbikinibottomrehydrated
-accent_colour: "#fff51c"
-
-mods_path: Pineapple/Content/Paks/~mods
+accent_colour: '#fff51b'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/Pineapple/Content/Paks/~mods'
+utilities: []

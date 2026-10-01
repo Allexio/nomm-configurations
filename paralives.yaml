@@ -1,22 +1,25 @@
-name: "Paralives"
-steam_id: 1118520
+name: Paralives
+steam_id: '1118520'
+steam_folder_name: ''
+gog_id: ''
 nexus_id: paralives
-accent_colour: "#032396"
-
-mods_path:
-- path: "{user_data}/drive_c/users/steamuser/AppData/LocalLow/Paralives/Paralives"
-  name: Standard
+accent_colour: '#022396'
+wiki_link: ''
+mod_paths:
+- name: Standard
   description: The standard mods path for all mods
-- path: "BepInEx/plugins/"
-  name: BepInEx Mods
-  description: The mods path for BepInEx mods.
-
-essential_utilities:
-  bepinex:
-    name: BepInex
-    version: "5.4.23.5"
-    creator: BepInEx
-    creator_link: "https://github.com/BepInEx"
-    source: "https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip"
-    utility_path: ""
-    launch_options: WINEDLLOVERRIDES='winhttp=n,b' %command%
+  path: '{user_data_path}/drive_c/users/steamuser/AppData/LocalLow/Paralives/Paralives'
+- name: BepInEx Mods
+  description: The mods path for BepInEx mods
+  path: '{game_path}/BepInEx/plugins'
+utilities:
+- name: BepInex
+  version: 5.4.23.5
+  creator: BepInex
+  creator_link: https://github.com/BepInEx
+  source_type: direct
+  source_url: https://github.com/BepInEx/BepInEx/releases/download/v5.4.23.5/BepInEx_win_x64_5.4.23.5.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='winhttp=n,b' %command%

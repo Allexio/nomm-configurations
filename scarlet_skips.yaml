@@ -1,0 +1,25 @@
+name: Scarlet Skips
+steam_id: '4513480'
+steam_folder_name: Scarlet Skips
+gog_id: ''
+nexus_id: scarletskips
+accent_colour: '#c94f58'
+wiki_link: ''
+mod_paths:
+- name: UE4SS mods
+  description: Used for UE4SS mods
+  path: '{game_path}/ScarletSkips/Binaries/Win64//ue4ss/Mods'
+- name: Paks mods
+  description: Used for Paks mods
+  path: '{game_path}/ScarletSkips/Content/Paks/~mods'
+utilities:
+- name: RE-UE4SS
+  version: experimental-latest
+  creator: UE4SS-RE
+  creator_link: https://github.com/UE4SS-RE
+  source_type: direct
+  source_url: https://github.com/Okaetsu/RE-UE4SS/releases/download/experimental-palworld/UE4SS-Palworld.zip
+  deploy_to_game_files: true
+  deployment_path: ScarletSkips/Binaries/Win64
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='dwmapi=n,b' %command%

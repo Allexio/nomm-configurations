@@ -1,28 +1,31 @@
 name: Dead as Disco
-steam_id: 3404260
+steam_id: '3404260'
+steam_folder_name: ''
+gog_id: ''
 nexus_id: deadasdisco
-accent_colour: "#d611fb"
-
-mods_path:
-- path: "Pagoda/Content/Paks/~mods/"
-  name: Paks mods
-  description: "Used for Paks mods."
-- path: "Pagoda/Content/Paks/LogicMods/"
-  name: Logic mods
-  description: "Used for Logic Paks mods"
-- path: "Pagoda/Binaries/Win64/ue4ss/Mods/"
-  name: Lua mods
-  description: "Used for UE4SS mods"
-- path: "Pagoda/Binaries/Win64/ue4ss/"
-  name: UE4SS Signature
-  description: "Used for UE4SS Signatures"
-
-essential_utilities:
-  RE-UE4SS:
-    name: RE-UE4SS
-    version: experimental-latest
-    creator: UE4SS-RE
-    creator_link: https://github.com/UE4SS-RE
-    source: "https://github.com/Okaetsu/RE-UE4SS/releases/download/experimental-palworld/UE4SS-Palworld.zip"
-    utility_path: "Pagoda/Binaries/Win64/"
-    launch_options: WINEDLLOVERRIDES='UE4SS=n,b;dwmapi=n,b' %command%
+accent_colour: '#d410fb'
+wiki_link: ''
+mod_paths:
+- name: Paks mods
+  description: Used for Paks mods
+  path: '{game_path}/Pagoda/Content/Paks/~mods'
+- name: Logic Paks mods
+  description: Used for Logic Paks mods
+  path: '{game_path}/Pagoda/Content/Paks/LogicMods'
+- name: Lua mods
+  description: Used for UE4SS mods
+  path: '{game_path}/Pagoda/Binaries/Win64/ue4ss/Mods'
+- name: UE4SS Signature
+  description: Used for UE4SS Signatures
+  path: '{game_path}/Pagoda/Binaries/Win64/ue4ss'
+utilities:
+- name: RE-UE4SS
+  version: experimental-latest
+  creator: RE-UE4SS
+  creator_link: https://github.com/UE4SS-RE
+  source_type: direct
+  source_url: https://github.com/Okaetsu/RE-UE4SS/releases/download/experimental-palworld/UE4SS-Palworld.zip
+  deploy_to_game_files: true
+  deployment_path: Pagoda/Binaries/Win64
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='UE4SS=n,b;dwmapi=n,b' %command%

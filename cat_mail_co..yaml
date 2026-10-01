@@ -1,32 +1,38 @@
-accent_colour: '#3584e4'
-essential_utilities:
-  bepinex:
-    name: BepInEx
-    creator: BepInEx
-    creator_link: https://github.com/BepInEx
-    enable_command: ''
-    launch_options: WINEDLLOVERRIDES='winhttp=n,b' %command%
-    source: https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785%2B6abdba4.zip
-    utility_path: ""
-    version: 6.0.0-be.785
-  melonloader:
-    name: MelonLoader
-    creator: Lava Gang
-    creator_link: https://github.com/LavaGang
-    enable_command: ''
-    launch_options: WINEDLLOVERRIDES='version=n,b' %command%
-    source: https://github.com/LavaGang/MelonLoader/releases/latest/download/MelonLoader.x64.zip
-    utility_path: ""
-    version: v0.7.3
-gog_id: ''
-mods_path:
-- description: The mods path for BepInEx mods.
-  name: BepInEx Mods
-  path: '{game_path}/BepInEx/plugins/'
-- description: The mods path for MelonLoader mods.
-  name: MelonLoader
-  path: '{game_path}/Mods'
 name: Cat Mail Co.
-nexus_id: catmailco
 steam_id: '4380490'
+steam_folder_name: CatMailCo
+gog_id: ''
+nexus_id: catmailco
+accent_colour: '#c1683e'
 wiki_link: ''
+mod_paths:
+- name: BepInEx Mods
+  description: The mods path for BepInEx mods
+  path: '{game_path}/BepInEx/plugins'
+- name: MelonLoader Mods
+  description: The mods path for MelonLoader mods
+  path: '{game_path}/Mods'
+utilities:
+- name: BepInEx
+  version: 6.0.0-be.785
+  creator: BepInEx
+  creator_link: https://github.com/BepInEx
+  source_type: direct
+  source_url: https://builds.bepinex.dev/projects/bepinex_be/785/BepInEx-Unity.IL2CPP-win-x64-6.0.0-be.785%2B6abdba4.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='winhttp=n,b' %command%
+  installation_lock_group: '1'
+- name: MelonLoader
+  version: Latest
+  creator: Lava Gang
+  creator_link: https://github.com/LavaGang
+  source_type: github
+  source_url: https://github.com/LavaGang/MelonLoader
+  github_asset_regex: MelonLoader.x64.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='version=n,b' %command%
+  installation_lock_group: '1'

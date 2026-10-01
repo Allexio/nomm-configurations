@@ -1,16 +1,23 @@
 name: Valheim
-steam_id: 892970
-mods_path: "BepInEx/plugins/"
-
-nexus_id: "valheim"
-
-essential_utilities:
-  valheim-plus:
-    name: ValheimPlus
-    version: 0.9.9.11
-    creator: valheimPlus
-    creator_link: https://github.com/valheimPlus
-    source: "https://github.com/valheimPlus/ValheimPlus/releases/download/0.9.9.11/UnixServer.zip"
-    utility_path: ""
-    info: "add './start_game_bepinex.sh %command%' to launch options"
-    enable_command: "chmod u+x start_game_bepinex.sh"
+steam_id: '892970'
+steam_folder_name: ''
+gog_id: ''
+nexus_id: valheim
+accent_colour: '#3584e4'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/BepInEx/plugins'
+utilities:
+- name: ValheimPlus
+  version: 0.9.9.11
+  creator: ValheimPlus
+  creator_link: https://github.com/valheimPlus
+  source_type: direct
+  source_url: https://github.com/valheimPlus/ValheimPlus/releases/download/0.9.9.11/UnixServer.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: ./start_game_bepinex.sh %command%
+  enable_command: chmod u+x start_game_bepinex.sh

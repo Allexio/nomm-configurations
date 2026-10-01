@@ -1,7 +1,12 @@
-name: "STAR WARS Jedi Fallen Order"
+name: STAR WARS Jedi Fallen Order
+steam_id: '1172380'
 steam_folder_name: Jedi Fallen Order
-steam_id: 1172380
+gog_id: ''
 nexus_id: starwarsjedifallenorder
-accent_colour: "#F7F9FA"
-
-mods_path: SwGame/Content/Paks/~mods/
+accent_colour: '#f7f9fa'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/SwGame/Content/Paks/~mods'
+utilities: []

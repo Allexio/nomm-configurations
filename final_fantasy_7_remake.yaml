@@ -1,7 +1,12 @@
 name: FINAL FANTASY VII REMAKE INTERGRADE
-steam_folder_name: FINAL FANTASY VII REMAKE
-steam_id: 1462040
+steam_id: '1462040'
+gog_id: ''
 nexus_id: finalfantasy7remake
-accent_colour: "#1CA9C9"
-
-mods_path: End/Content/Paks/~mods/
+accent_colour: '#1ba8c9'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/End/Content/Paks/~mods'
+utilities: []
+steam_folder_name: FINAL FANTASY VII REMAKE

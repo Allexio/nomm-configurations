@@ -1,7 +1,12 @@
-name: "Crash Bandicoot™ 4: It’s About Time"
-steam_id: 1378990
-steam_folder_name: "Crash Bandicoot 4"
-
-mods_path: "{game_path}/Lava/Content/Paks/~mods"
-
-nexus_id: "crashbandicoot4itsabouttime"
+name: 'Crash Bandicoot 4: It''s About Time'
+steam_id: '1378990'
+steam_folder_name: ''
+gog_id: ''
+nexus_id: crashbandicoot4itsabouttime
+accent_colour: '#f48b00'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/Lava/Content/Paks/~mods'
+utilities: []

@@ -1,17 +1,23 @@
 name: Cat Quest II
-steam_id: 914710
-
-mods_path: "Mods"
-
-
-nexus_id: "catquestii"
-
-essential_utilities:
-  MelonLoader:
-    name: MelonLoader
-    version: v0.7.3
-    creator: Lava Gang
-    creator_link: https://github.com/LavaGang
-    source: "https://github.com/LavaGang/MelonLoader/releases/latest/download/MelonLoader.x86.zip"
-    utility_path: ""
-    launch_options: WINEDLLOVERRIDES='version=n,b' %command%
+steam_id: '914710'
+steam_folder_name: ''
+gog_id: ''
+nexus_id: catquestii
+accent_colour: '#3583e4'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/Mods'
+utilities:
+- name: MelonLoader
+  version: Latest
+  creator: Lava Gang
+  creator_link: https://github.com/LavaGang
+  source_type: github
+  source_url: https://github.com/LavaGang/MelonLoader
+  github_asset_regex: MelonLoader.x64.zip
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='version=n,b' %command%

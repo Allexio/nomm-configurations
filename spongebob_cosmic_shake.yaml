@@ -1,7 +1,12 @@
-name: "SpongeBob SquarePants: The Cosmic Shake"
+name: 'SpongeBob SquarePants: The Cosmic Shake'
+steam_id: '1282150'
 steam_folder_name: SpongeBob SquarePants The Cosmic Shake
-steam_id: 1282150
+gog_id: ''
 nexus_id: spongebobsquarepantsthecosmicshake
-accent_colour: "#cd06e3"
-
-mods_path: CosmicShake/Content/Paks/
+accent_colour: '#cd06e3'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/CosmicShake/Content/Paks'
+utilities: []

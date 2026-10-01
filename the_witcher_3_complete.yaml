@@ -1,8 +1,12 @@
-name: 'The Witcher 3'
-steam_folder_name: 'The Witcher 3'
-steam_id: 292030
-nexus_id: "witcher3"
-gog_id: 1495134320
+name: The Witcher 3
+steam_id: '292030'
+steam_folder_name: The Witcher 3
+gog_id: '1495134320'
+nexus_id: witcher3
+accent_colour: '#3584e4'
 wiki_link: witcher-3
-
-mods_path: mods/
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/mods'
+utilities: []

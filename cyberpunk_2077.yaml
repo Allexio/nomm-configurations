@@ -1,22 +1,45 @@
-name: 'Cyberpunk 2077'
-steam_id: 1091500
-mods_path: ""
-accent_colour: "#FFFF00"
-gog_id: 1423049311
-
-nexus_id: "cyberpunk2077"
-
-essential_utilities:
-  red4ext:
-    name: "red4ext"
-    creator: wopss
-    creator_link: https://github.com/wopss
-    source: "https://github.com/wopss/RED4ext/releases/download/v1.30.0/red4ext-1.30.0.zip"
-    utility_path: ""
-
-  CyberEngineTweaks:
-    name: "Cyber Engine Tweaks"
-    creator: maximegmd
-    creator_link: https://github.com/maximegmd
-    source: "https://github.com/maximegmd/CyberEngineTweaks/releases/download/v1.37.1/cet_1.37.1.zip"
-    utility_path: ""
+name: Cyberpunk 2077
+steam_id: '1091500'
+steam_folder_name: ''
+gog_id: '1423049311'
+nexus_id: cyberpunk2077
+accent_colour: '#ffff00'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/'
+utilities:
+- name: red4ext
+  version: Latest
+  creator: wopss
+  creator_link: https://github.com/wopss
+  source_type: github
+  source_url: https://github.com/wopss/RED4ext
+  github_asset_regex: red4ext
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='winmm=n,b;version=n,b' %command%
+- name: Cyber Engine Tweaks
+  version: Latest
+  creator: maximegmd
+  creator_link: https://github.com/maximegmd
+  source_type: github
+  source_url: https://github.com/maximegmd/CyberEngineTweaks
+  github_asset_regex: cet
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='winmm=n,b;version=n,b' %command%
+- name: Codeware
+  version: Latest
+  creator: psiberx
+  creator_link: https://github.com/psiberx
+  source_type: github
+  source_url: https://github.com/psiberx/cp2077-codeware
+  github_asset_regex: Codeware
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  launch_options: WINEDLLOVERRIDES='winmm=n,b;version=n,b' %command%

@@ -1,12 +1,14 @@
 name: FINAL FANTASY VII REBIRTH
-steam_id: 2909400
+steam_id: '2909400'
+gog_id: ''
 nexus_id: finalfantasy7rebirth
-accent_colour: "#ac1a24"
-
-mods_path:
-- path: End/Content/Paks/~mods/
-  name: Default
-  description: Regular mods that go in the ~mods folder
-- path: End/Mods/
-  name: Dresscode Mods
+accent_colour: '#ac1a24'
+wiki_link: ''
+mod_paths:
+- name: Paks Mods
+  description: Used for Paks mods
+  path: '{game_path}/End/Content/Paks/~mods'
+- name: Dresscode Mods
   description: Mods specifically made for Dresscode
+  path: '{game_path}/End/Mods'
+utilities: []
