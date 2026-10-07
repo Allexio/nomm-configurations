@@ -1,0 +1,31 @@
+name: 'The Elder Scrolls V: Skyrim Special Edition'
+steam_id: '489830'
+steam_folder_name: Skyrim Special Edition
+gog_id: ''
+nexus_id: skyrimspecialedition
+accent_colour: '#3584e4'
+wiki_link: ''
+mod_paths:
+- name: Default path
+  description: The default path where mods will be extracted to
+  path: '{game_path}/Data/'
+utilities:
+- name: LOOT
+  version: Latest
+  creator: The LOOT Team
+  creator_link: https://loot.github.io/credits/
+  source_type: flatpak
+  source_url: io.github.loot.loot
+  executable_type: flatpak
+- name: SKSE
+  version: Latest
+  creator: Ian (ianpatt), Stephen (behippo)
+  creator_link: https://skse.silverlock.org/
+  source_type: nexus
+  source_url: https://www.nexusmods.com/skyrimspecialedition/mods/30379
+  nexus_file_name_start: Skyrim Script Extender
+  deploy_to_game_files: true
+  deployment_path: /
+  executable_type: non-exec
+  final_instructions: Add the SKSE executable as a non-steam game if you want to launch
+    it
